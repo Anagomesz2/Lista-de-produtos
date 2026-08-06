@@ -31,3 +31,9 @@ let produto2 = ['Sprite'];
 produto2.push('Coca Cola');
 console.table(produtos);
 
+// Crie um novo array contendo apenas parte dos registros utilizando -3
+let produtosBase = ['Coca Cola', 'Fanta', 'Guaraná', 'Sprite'];
+
+let produtosFiltrados = produtosBase.filter((produto) => produto !== 'Fanta');
+
+console.table(produtosFiltrados);
