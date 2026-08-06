@@ -24,3 +24,8 @@ console.table(produtos);
 //desenvolvimento 1 main
 produtos.shift("Cola Coca");
 console.table(produtos);
+
+//desenvolvimento 2
+let novoProduto = { nome: 'Sprite', preco: 10 };
+produtos.unshift(novoProduto);
+console.table(produtos);
