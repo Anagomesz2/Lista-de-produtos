@@ -1,6 +1,6 @@
 let produtos = [
-    {
-        nome: 'Coca Cola',
+  {
+        nome: 'Cola Coca',
         preco: 19,
     },
     {
@@ -29,7 +29,7 @@ console.table(produtos);
 
 let produto2 = ['Sprite'];
 produto2.push('Coca Cola');
-console.table(produtos);
+console.table(produto2);
 
 // Crie um novo array contendo apenas parte dos registros utilizando -3
 let produtosBase = ['Coca Cola', 'Fanta', 'Guaraná', 'Sprite'];
@@ -44,3 +44,15 @@ produtos4.reverse();
 
 // Exibir o resultado utilizando:
 console.table(produtos4);
+//desenvolvimento 1 main
+produtos.shift("Cola Coca");
+console.table(produtos);
+
+//desenvolvimento 2
+let novoProduto = { nome: 'Sprite', preco: 10 };
+produtos.unshift(novoProduto);
+console.table(produtos);
+
+//desenvolvimento 3
+let produtoEncontrado = produtos.find((produto) => produto.nome === 'Pepsi');
+console.log(produtoEncontrado);
