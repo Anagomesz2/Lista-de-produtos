@@ -1,6 +1,6 @@
 let produtos = [
     {
-        nome: 'Cola coca',
+        nome: 'Coca-Cola',
         preco: 19,
     },
     {
@@ -28,3 +28,10 @@ produtos.length = 4;
 console.log("====================");
 console.log("Quantidade de produtos:");
 console.log(produtos.length);
+
+//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 2 - C ── ⋆⋅𖤓⋅⋆ ──
+
+console.log('====================');
+console.log('Transformar em maiúsculo:');
+let maiusculas = produtos.map((produto) => produto.nome.toUpperCase());
+console.table(maiusculas);
