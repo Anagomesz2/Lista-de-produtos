@@ -1,6 +1,6 @@
 let produtos = [
-    {
-        nome: 'Coca-Cola',
+  {
+        nome: 'Cola Coca',
         preco: 19,
     },
     {
@@ -21,36 +21,38 @@ console.log('lista de produtos:');
 console.log('===========================');
 console.table(produtos);
 
-//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 1 - C ── ⋆⋅𖤓⋅⋆ ──
+// Removendo o último elemento do array - 1
+produtos.pop();
+console.table(produtos);
 
-produtos.length = 4;
+// Adicionar um novo elemento ao final do array utilizando o método push - 2
 
-console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
-console.log('─ ✤ ─ Quantidade de produtos ─ ✤ ─');
-console.log("------> " + produtos.length);
+let produto2 = ['Sprite'];
+produto2.push('Coca Cola');
+console.table(produto2);
 
-//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 2 - C ── ⋆⋅𖤓⋅⋆ ──
+// Crie um novo array contendo apenas parte dos registros utilizando -3
+let produtosBase = ['Coca Cola', 'Fanta', 'Guaraná', 'Sprite'];
 
-console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
-console.log(' ─ ✤ ─ Transformar em Maiúsculo─ ✤ ─ ');
-let maiusculas = produtos.map((produto) => produto.nome.toUpperCase());
-console.table(maiusculas);
+let produtosFiltrados = produtosBase.filter((produto) => produto !== 'Fanta');
 
-//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 3 - C ── ⋆⋅𖤓⋅⋆ ──
+console.table(produtosFiltrados);
 
-console.log(" ─ ✤ ─ Todos os Elementos ─ ✤ ─ ");
-console.log("─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ");
-for (const produto of produtos) {
-    console.log(produto);
-}
+// Inverter a ordem do array utilizando -4
+let produtos4 = ['Coca Cola', 'Guarana', 'Sprite'];
+produtos4.reverse();
 
-//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 4 - C ── ⋆⋅𖤓⋅⋆ ──
+// Exibir o resultado utilizando:
+console.table(produtos4);
+//desenvolvimento 1 main
+produtos.shift("Cola Coca");
+console.table(produtos);
 
-console.log(' ─ ✤ ─ Quantidade suficiente de Produtos─ ✤ ─ ');
-console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
+//desenvolvimento 2
+let novoProduto = { nome: 'Sprite', preco: 10 };
+produtos.unshift(novoProduto);
+console.table(produtos);
 
-if (produtos.length >= 5) {
-    console.log('O array possui quantidade suficiente de produtos.');
-} else {
-    console.log('O array possui quantidade insuficiente de produtos.');
-}
+//desenvolvimento 3
+let produtoEncontrado = produtos.find((produto) => produto.nome === 'Pepsi');
+console.log(produtoEncontrado);
