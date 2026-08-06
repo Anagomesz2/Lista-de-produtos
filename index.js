@@ -25,4 +25,9 @@ console.table(produtos);
 produtos.pop();
 console.table(produtos);
 
+// Adicionar um novo elemento ao final do array utilizando o método push - 2
+
+let produto2 = ['Sprite'];
+produto2.push('Coca Cola');
+console.table(produtos);
 
