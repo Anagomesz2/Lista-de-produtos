@@ -29,3 +29,7 @@ console.table(produtos);
 let novoProduto = { nome: 'Sprite', preco: 10 };
 produtos.unshift(novoProduto);
 console.table(produtos);
+
+//desenvolvimento 3
+let produtoEncontrado = produtos.find((produto) => produto.nome === 'Pepsi');
+console.log(produtoEncontrado);
