@@ -37,3 +37,10 @@ let produtosBase = ['Coca Cola', 'Fanta', 'Guaraná', 'Sprite'];
 let produtosFiltrados = produtosBase.filter((produto) => produto !== 'Fanta');
 
 console.table(produtosFiltrados);
+
+// Inverter a ordem do array utilizando -4
+let produtos4 = ['Coca Cola', 'Guarana', 'Sprite'];
+produtos4.reverse();
+
+// Exibir o resultado utilizando:
+console.table(produtos4);
