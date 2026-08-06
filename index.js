@@ -17,21 +17,29 @@ let produtos = [
     },
 ];
 
-console.log("lista de produtos:");
-console.log("===========================");
+console.log('lista de produtos:');
+console.log('===========================');
 console.table(produtos);
 
 //── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 1 - C ── ⋆⋅𖤓⋅⋆ ──
 
 produtos.length = 4;
 
-console.log("====================");
-console.log("Quantidade de produtos:");
-console.log(produtos.length);
+console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
+console.log('─ ✤ ─ Quantidade de produtos ─ ✤ ─');
+console.log("------> " + produtos.length);
 
 //── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 2 - C ── ⋆⋅𖤓⋅⋆ ──
 
-console.log('====================');
-console.log('Transformar em maiúsculo:');
+console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
+console.log(' ─ ✤ ─ Transformar em Maiúsculo─ ✤ ─ ');
 let maiusculas = produtos.map((produto) => produto.nome.toUpperCase());
 console.table(maiusculas);
+
+//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 3 - C ── ⋆⋅𖤓⋅⋆ ──
+
+console.log(" ─ ✤ ─ Todos os Elementos ─ ✤ ─ ");
+console.log("─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ");
+for (const produto of produtos) {
+    console.log(produto);
+}
