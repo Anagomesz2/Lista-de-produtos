@@ -20,3 +20,11 @@ let produtos = [
 console.log("lista de produtos:");
 console.log("===========================");
 console.table(produtos);
+
+//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 1 - C ── ⋆⋅𖤓⋅⋆ ──
+
+produtos.length = 4;
+
+console.log("====================");
+console.log("Quantidade de produtos:");
+console.log(produtos.length);
