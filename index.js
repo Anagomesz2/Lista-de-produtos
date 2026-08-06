@@ -1,6 +1,6 @@
 let produtos = [
     {
-        nome: 'Cola coca',
+        nome: 'Coca Cola',
         preco: 19,
     },
     {
@@ -17,6 +17,12 @@ let produtos = [
     },
 ];
 
-console.log("lista de produtos:");
-console.log("===========================");
+console.log('lista de produtos:');
+console.log('===========================');
 console.table(produtos);
+
+// Removendo o último elemento do array - 1
+produtos.pop();
+console.table(produtos);
+
+
