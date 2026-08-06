@@ -43,3 +43,14 @@ console.log("─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ");
 for (const produto of produtos) {
     console.log(produto);
 }
+
+//── ⋆⋅𖤓⋅⋆ ── Desenvolvimento 4 - C ── ⋆⋅𖤓⋅⋆ ──
+
+console.log(' ─ ✤ ─ Quantidade suficiente de Produtos─ ✤ ─ ');
+console.log('─── ∙ ∙ ∙ ✤ ∙ ∙ ∙ ─── ');
+
+if (produtos.length >= 5) {
+    console.log('O array possui quantidade suficiente de produtos.');
+} else {
+    console.log('O array possui quantidade insuficiente de produtos.');
+}
