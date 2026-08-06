@@ -1,6 +1,6 @@
 let produtos = [
     {
-        nome: 'Cola coca',
+        nome: 'Cola Coca',
         preco: 19,
     },
     {
@@ -19,4 +19,8 @@ let produtos = [
 
 console.log("lista de produtos:");
 console.log("===========================");
+console.table(produtos);
+
+//desenvolvimento 1 main
+produtos.shift("Cola Coca");
 console.table(produtos);
